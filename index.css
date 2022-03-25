@@ -1,0 +1,123 @@
+@import url(//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Flexo";
+}
+
+body {
+    /* background-color: rgb(225, 247, 247) ; */
+    background-image: url("./assets/back-poke.png");
+    
+}
+
+.logo-container {
+    position: absolute;
+    left: calc(50% - 200px);
+}
+
+.logo-container img {
+    height: 140px;
+    width: 400px;
+    
+}
+
+.pokedex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 950px;
+    min-width: 500px;
+    background-image: url("./assets/pokedex.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    margin: 0px 300px;  
+    position: absolute;
+    left: calc(50% - 850px);
+}
+
+.left {
+    margin-top: 420px;
+    margin-left: 10px;
+    grid-column: 2;
+}
+
+.left .img-container {
+    margin-top: 30px;
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.search-container{
+    margin-top: 60px;
+    font-size: 2rem;
+}
+
+.search-container button {
+    
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+
+}
+
+.search-container button:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.right{
+    grid-column: 4 / 6;
+    margin-top: 405px;
+}
+.right label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.right span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+.info-container {
+    
+    display: flex;
+    gap: 90px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.moves {
+    display: flex;
+    flex-direction: column;
+}
+
